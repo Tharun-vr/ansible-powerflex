@@ -48,9 +48,9 @@ jobs:
       fail-fast: false
       matrix:
         python-version: [3.8, 3.9]
-        ansible-version: [stable-2.12]
+        ansible-version: [ stable- 2.11, stable-2.12, stable-2.13]
 
-    steps:   
+    steps:
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v1
         with:
@@ -87,7 +87,7 @@ jobs:
     needs: [build]
     strategy:
       matrix:
-        ansible-version: [stable-2.10, stable-2.11, stable-2.12]
+        ansible-version: [stable-2.11, stable-2.12, stable-2.13]
 
     steps:
       - name: Set up Python 3.9
