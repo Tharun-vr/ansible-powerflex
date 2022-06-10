@@ -49,6 +49,8 @@ jobs:
       matrix:
         python-version: [3.8, 3.9]
         ansible-version: [stable-2.12]
+
+     steps:   
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v1
         with:
