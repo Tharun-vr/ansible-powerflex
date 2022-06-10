@@ -86,7 +86,7 @@ jobs:
     needs: [build]
     strategy:
       matrix:
-        ansible-version: [stable-2.10, stable-2.11, stable-2.12]
+        ansible-version: [stable-2.11, stable-2.12, stable-2.13]
 
     steps:
       - name: Set up Python 3.9
