@@ -35,9 +35,10 @@ jobs:
           name: collection
           path: .cache/collection-tarballs
 
-#Unit tests (OPTIONAL)
-#
-#https://docs.ansible.com/ansible/latest/dev_guide/testing_units.html
+###
+# Unit tests (OPTIONAL)
+# 
+# https://docs.ansible.com/ansible/latest/dev_guide/testing_units.html
 
   unit:
     name: Unit Tests
